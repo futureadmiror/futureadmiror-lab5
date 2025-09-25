@@ -45,7 +45,7 @@ public class Enigma{
             int idx =  rotors[1].indexOf(letter);
             char finalChar =  rotors[2].charAt(idx); 
 
-            result = result + finalChar; //N
+            result = result + finalChar; //NDU
             rotate();
         } 
         return result;           

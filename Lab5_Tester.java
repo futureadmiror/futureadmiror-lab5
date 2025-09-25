@@ -37,7 +37,7 @@ public class Lab5_Tester {
   }
 
   @Test
-  public void test5() {
+  public void test5() {////
     System.out.println("simple decryption");
     String expected = "AAA";
     String[] input = {"1", "2", "3", "###", "decrypt", "NDU"};

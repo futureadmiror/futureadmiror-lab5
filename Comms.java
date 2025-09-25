@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Comms {
 
   public static String run(String[] args) {
-    
     // Encrypt or decrypt argument
     boolean encrypt = true;
     if( args[4].equals("decrypt") )
@@ -25,6 +24,7 @@ public class Comms {
     String message = args[5];
 
     // Call the Enigma's constructor to build the machine
+    //System.out.println("here");
     Enigma enigma = new Enigma(id1, id2, id3, args[3]);
 
     // Encrypt or Decrypt

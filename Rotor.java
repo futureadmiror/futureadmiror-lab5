@@ -15,27 +15,25 @@ public class Rotor {
     
     public boolean rotate(){
         char[] rot = rotorValues.toCharArray(); //#GNUAHOVBIPWCJQXDKRYELSZFMT
-        char[] str = new char[rot.length];
-        str[0] = rot[rot.length - 1];    //T#GNUAHOVBIPWCJQXDKRYELSZFM
+        char[] str = new char[rot.length]; 
+        str[0] = rot[rot.length - 1];    //T#GNUAHOVBIPWCJQXDKRYELSZFMfi
         boolean match = false;
         for (int i = 1; i < rot.length ; i++ ){
             str[i] = rot[i - 1]; 
         }
 
-        rotorValues = new String(str);
+        rotorValues = new String(str); // sets str to a string again
 
         if (str[0] == startChar){
             match = true;
             return match;
         }
-       return false;        
+       return match;        
     }
     
-
+    //Return the index of a given character.
     public int indexOf(char c){
-        
         char[] rot = rotorValues.toCharArray();
-        
         for (int i = 0; i < rot.length; i++){
             if (rot[i] == c ) {
                 return i;
@@ -45,9 +43,7 @@ public class Rotor {
     }
     //Return the character at a given index.
     public char charAt(int idx){
-       
         char[] rot = rotorValues.toCharArray();
-        
         return rot[idx];
     }
 }
