@@ -35,7 +35,7 @@ public class Rotor {
     public int indexOf(char c){
         
         char[] rot = rotorValues.toCharArray();
-        //System.out.println(rot[0]);
+        
         for (int i = 0; i < rot.length; i++){
             if (rot[i] == c ) {
                 return i;
